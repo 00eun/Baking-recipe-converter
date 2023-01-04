@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#navbar{margin: 0 auto;}
+.titCon{position: relative; margin: 0 auto; max-width: 401px; height: auto; }
+.bear{position: absolute; left:0; top:0; width: 100%;}
+.bear .face{position: absolute; left: 0; top:0; transform-origin: center; animation: upDown 1s ease-in-out 0s infinite;}
+.bear .lft{position: absolute; left: 0; top: 0; transform-origin: 40% 50%; animation: rolling 1s ease-in-out 0s infinite;}
+.bear .rgt{position: absolute; left: 0; top: 0; transform-origin: 50% 40%; animation: rolling2 1s ease-in-out 0s infinite;}
+.bear img {width:100%; max-width:401px; height:auto;}
+
+@keyframes upDown {
+  50% {
+    -webkit-transform:translateY(5px);
+        transform:translateY(5px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+  }
+}
+
+@keyframes rolling {
+  50% {
+    -webkit-transform: rotate(1deg);
+        transform:rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+  }
+}	
+@keyframes rolling2 {
+  50% {
+    -webkit-transform: rotate(-1deg);
+        transform:rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+  }
+}	

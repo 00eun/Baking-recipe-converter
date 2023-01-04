@@ -1,0 +1,30 @@
+@charset "utf-8";
+*,
+header,
+main,
+section,
+div,
+h1,
+label,
+input,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width에 두께를 포함 시키는 값, padding쓰면 무조건 box-sizing해주자! */
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
