@@ -4,8 +4,12 @@
 .titCon{position: relative; margin: 0 auto; max-width: 401px; height: auto; }
 .bear{position: absolute; left:0; top:0; width: 100%;}
 .bear .face{position: absolute; left: 0; top:0; transform-origin: center; animation: upDown 1s ease-in-out 0s infinite;}
-.bear .lft{position: absolute; left: 0; top: 0; transform-origin: 40% 50%; animation: rolling 1s ease-in-out 0s infinite;}
-.bear .rgt{position: absolute; left: 0; top: 0; transform-origin: 50% 40%; animation: rolling2 1s ease-in-out 0s infinite;}
+.bear .lft{position: absolute; left: 0; top: 0; 
+  /* transform-origin: 32% 80%; animation: rolling 1s ease-in-out 0s infinite; */
+}
+.bear .rgt{position: absolute; left: 0; top: 0; 
+  /* transform-origin: 68% 80%; animation: rolling2 1s ease-in-out 0s infinite; */
+}
 .bear img {width:100%; max-width:401px; height:auto;}
 
 @keyframes upDown {
@@ -21,8 +25,8 @@
 
 @keyframes rolling {
   50% {
-    -webkit-transform: rotate(1deg);
-        transform:rotate(1deg);
+    -webkit-transform: rotate(10deg);
+        transform:rotate(10deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -31,11 +35,14 @@
 }	
 @keyframes rolling2 {
   50% {
-    -webkit-transform: rotate(-1deg);
-        transform:rotate(-1deg);
+    -webkit-transform: rotate(-10deg);
+        transform:rotate(-10deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
   }
 }	
+
+.chandgeMenu {display: flex; justify-content: center; padding-top: 30vh; margin: 0 auto; max-width: 500px; flex-wrap: wrap;}
+.chandgeMenu li{ padding:16px 50px; background-color: #ecb486; border-radius: 20px; font-size: 20px; line-height: 28px; font-weight: bold; text-align: center; margin: 10px; border: solid 5px #bb7f4e;}
