@@ -28,29 +28,109 @@
         </div>
       </div>
       <ul class="chandgeMenu">
-        <li class="free">내맘대로⭐<br/>레시피 변경</li>
-        <li class="cake">케이크🍰 <br/>레시피 변경</li>
+        <li class="free">재료</li>
+        <li class="cake">도구팬</li>
       </ul>
     </nav>
     <!-- Navbar e -->
-    <!-- <form>
-      <div>
-        <span>내가 가진 틀 : </span>
-        <select name="order" form="myForm">
-          <option value="americano">원형</option>
-          <option value="caffe latte">사각형</option>
-        </select>
-        <div class="circle">
-          <p>반지름 : <input type="number" min="0" /></p>
-          <p>높이 : <input type="number" min="0" /></p>
+    <!-- 오리지널 틀, 내 틀 s-->
+    <form>
+      <div class="mold">
+        <div class="moldOrigin">
+          <span>오지지널 틀 : </span>
+          <select name="order" form="myForm">
+            <option value="americano">원형</option>
+            <option value="caffe latte">사각형</option>
+          </select>
+          <div class="circle">
+            <p><input type="number" min="0" placeholder="반지름"/></p>
+            <p><input type="number" min="0" placeholder="높이"/></p>
+          </div>
+          <!-- <div class="rectangle">
+            <p>가로 : <input type="number" min="0" /></p>
+            <p>세로 : <input type="number" min="0" /></p>
+            <p>높이 : <input type="number" min="0" /></p>
+          </div> -->
         </div>
-        <div class="rectangle">
-          <p>가로 : <input type="number" min="0" /></p>
-          <p>세로 : <input type="number" min="0" /></p>
-          <p>높이 : <input type="number" min="0" /></p>
+        <div class="moldMy">
+          <span>내가 가진 틀 : </span>
+          <select name="order" form="myForm">
+            <option value="americano">원형</option>
+            <option value="caffe latte">사각형</option>
+          </select>
+          <div class="circle">
+            <p><input type="number" min="0" placeholder="반지름"/></p>
+            <p><input type="number" min="0" placeholder="높이"/></p>
+          </div>
+          <!-- <div class="rectangle">
+            <p>가로 : <input type="number" min="0" /></p>
+            <p>세로 : <input type="number" min="0" /></p>
+            <p>높이 : <input type="number" min="0" /></p>
+          </div> -->
         </div>
       </div>
-    </form> -->
+    </form>
+    <div class="result">오리지널 틀은 내가 가진 틀의 <strong>00</strong>배 입니다</div>
+    <!-- 오리지널 틀, 내 틀 e-->
+    <!-- 재료 s -->
+    <form action="" class="ingredients">
+      <div class="ingredientOrigin">
+        <div class="res_tbl_wrap">
+          <table>
+            <colgroup>
+              <col style="width:50%" >
+              <col style="width:50%" >
+            </colgroup>
+            <thead>
+              <tr>
+                <th>재료명</th>
+                <th>재료값</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" data-label="재료명">밀가루</td>
+                <td data-label="재료값">밀가루값</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="재료명">설탕</td>
+                <td data-label="재료값">설탕값</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="재료명">계란</td>
+                <td data-label="재료값">계란값</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="ingredientsMy">
+        <div class="res_tbl_wrap">
+          <table>
+            <colgroup>
+              <col style="width:100%" >
+            </colgroup>
+            <thead>
+              <tr>
+                <th>계산값</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="계산값">밀계산값</td>
+              </tr>
+              <tr>
+                <td data-label="계산값">설탕계산값</td>
+              </tr>
+              <tr>
+                <td data-label="계산값">계란계산값</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </form>
+    <!-- 재료 e -->
     <script src="src/app.js"></script>
   </body>
 </html>
