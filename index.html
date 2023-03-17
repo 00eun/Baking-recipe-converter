@@ -30,10 +30,14 @@
       <ul class="chandgeMenu">
         <li class="free">재료</li>
         <li class="cake">도구팬</li>
+        <li class="cNumber">개수변경</li> 
+        <!-- 원래 레시피에서 내가 만들고 싶은 분량만큼 배합 늘리기 줄이기 -->
       </ul>
     </nav>
     <!-- Navbar e -->
-    <!-- 오리지널 틀, 내 틀 s-->
+    <!-- freeContainer s -->
+    <div class="freeContainer">
+      <!-- 오리지널 틀, 내 틀 s-->
     <form>
       <div class="mold">
         <div class="moldOrigin">
@@ -72,7 +76,7 @@
     </form>
     <div class="result">오리지널 틀은 내가 가진 틀의 <strong>00</strong>배 입니다</div>
     <!-- 오리지널 틀, 내 틀 e-->
-    <!-- 재료 s -->
+    <!-- 재료명 계산값 s -->
     <form action="" class="ingredients">
       <div class="ingredientOrigin">
         <div class="res_tbl_wrap">
@@ -130,7 +134,58 @@
         </div>
       </div>
     </form>
-    <!-- 재료 e -->
-    <script src="src/app.js"></script>
+    <!-- 재료명 계산값 e -->
+    </div>
+    <!-- freeContainer e -->
+    <!-- cNumber s -->
+    <div class="cNumber">
+      <div class="calculate">
+        <div>
+          <input type="number" placeholder="원래 레시피 개수" class="originNum" min="1" >
+          <input type="number" placeholder="변경 레시피 개수" class="chandgeNum" min="1" >
+        </div>
+        <div class="cNumberResult">값을 입력해주세요</div>
+      </div>
+      <div class="resultsTable">
+        <div class="res_tbl_wrap">
+          <table>
+            <colgroup>
+              <col style="width:10%" >
+              <col style="width:30%" >
+              <col style="width:30%" >
+              <col style="width:30%" >
+            </colgroup>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>재료</th>
+                <th>기본량</th>
+                <th>결과값</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" data-label="넘버" class="no">1</td>
+                <td scope="row" data-label="재료명" class="ingredientName">
+                  <input type="text" name="text" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="재료값" class="originGram">
+                  <input type="number" name="number" min="1" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="결과값" class="resultGram">결과값</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="넘버" class="no">2</td>
+                <td scope="row" data-label="재료명">설탕</td>
+                <td data-label="재료값">설탕값</td>
+                <td data-label="결과값">결과값</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- cNumber e  -->
+    <script src="js/app.js"></script>
   </body>
 </html>
