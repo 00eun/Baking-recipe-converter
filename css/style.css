@@ -78,7 +78,7 @@ min-width: 100px;
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
-  max-width: 360px;
+  max-width: 500px;
   border-top: 2px solid #121212;
 }
 .res_tbl_wrap table {
@@ -153,12 +153,18 @@ min-width: 100px;
 }
 
 /* 공통 */
+input{
+  font-size: 16px;
+}
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 /* cNumber */
+.calculate{margin: 30px auto;}
 .resultsTable{margin: 0 auto;}
 .tableHead{display: flex; justify-content: center;}
 tbody td input:focus {outline: none;}

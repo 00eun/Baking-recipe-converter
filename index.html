@@ -28,9 +28,9 @@
         </div>
       </div>
       <ul class="chandgeMenu">
-        <li class="free">재료</li>
-        <li class="cake">도구팬</li>
-        <li class="cNumber">개수변경</li> 
+        <li class="cNumber">개수 변경</li> 
+        <li class="cake">팬 변경</li>
+        <li class="free">재료 변경</li>
         <!-- 원래 레시피에서 내가 만들고 싶은 분량만큼 배합 늘리기 줄이기 -->
       </ul>
     </nav>
@@ -140,20 +140,22 @@
     <!-- cNumber s -->
     <div class="cNumber">
       <div class="calculate">
+        <div class="cNumberResult">값을 입력해주세요</div>
         <div>
           <input type="number" placeholder="원래 레시피 개수" class="originNum" min="1" >
           <input type="number" placeholder="변경 레시피 개수" class="chandgeNum" min="1" >
         </div>
-        <div class="cNumberResult">값을 입력해주세요</div>
       </div>
       <div class="resultsTable">
+        <caption>값을 입력해주세요</caption>
         <div class="res_tbl_wrap">
           <table>
             <colgroup>
-              <col style="width:10%" >
+              <col style="width:2%" >
               <col style="width:30%" >
               <col style="width:30%" >
               <col style="width:30%" >
+              <col style="width:8%" >
             </colgroup>
             <thead>
               <tr>
@@ -161,24 +163,64 @@
                 <th>재료</th>
                 <th>기본량</th>
                 <th>결과값</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr id="0000000000001">
                 <td scope="row" data-label="넘버" class="no">1</td>
                 <td scope="row" data-label="재료명" class="ingredientName">
                   <input type="text" name="text" size="20" style="width:100%; border: 0;">
                 </td>
-                <td data-label="재료값" class="originGram">
+                <td data-label="기본량" class="originGram">
                   <input type="number" name="number" min="1" size="20" style="width:100%; border: 0;">
                 </td>
-                <td data-label="결과값" class="resultGram">결과값</td>
+                <td data-label="결과값" class="resultGram"></td>
+                <td data-label="추가버튼" class="tableBtn"><button>x</button></td>
               </tr>
-              <tr>
+              <tr id="0000000000002">
                 <td scope="row" data-label="넘버" class="no">2</td>
-                <td scope="row" data-label="재료명">설탕</td>
-                <td data-label="재료값">설탕값</td>
-                <td data-label="결과값">결과값</td>
+                <td scope="row" data-label="재료명" class="ingredientName">
+                  <input type="text" name="text" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="기본량" class="originGram">
+                  <input type="number" name="number" min="1" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="결과값" class="resultGram"></td>
+                <td data-label="추가버튼" class="tableBtn"><button>x</button></td>
+              </tr>
+              <tr id="0000000000003">
+                <td scope="row" data-label="넘버" class="no">3</td>
+                <td scope="row" data-label="재료명" class="ingredientName">
+                  <input type="text" name="text" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="기본량" class="originGram">
+                  <input type="number" name="number" min="1" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="결과값" class="resultGram"></td>
+                <td data-label="추가버튼" class="tableBtn"><button>x</button></td>
+              </tr>
+              <tr id="0000000000004">
+                <td scope="row" data-label="넘버" class="no">4</td>
+                <td scope="row" data-label="재료명" class="ingredientName">
+                  <input type="text" name="text" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="기본량" class="originGram">
+                  <input type="number" name="number" min="1" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="결과값" class="resultGram"></td>
+                <td data-label="추가버튼" class="tableBtn"><button>x</button></td>
+              </tr>
+              <tr id="0000000000005">
+                <td scope="row" data-label="넘버" class="no">5</td>
+                <td scope="row" data-label="재료명" class="ingredientName">
+                  <input type="text" name="text" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="기본량" class="originGram">
+                  <input type="number" name="number" min="1" size="20" style="width:100%; border: 0;">
+                </td>
+                <td data-label="결과값" class="resultGram"></td>
+                <td data-label="추가버튼" class="tableBtn"><button>x</button></td>
               </tr>
             </tbody>
           </table>
